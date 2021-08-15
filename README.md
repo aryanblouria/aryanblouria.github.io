@@ -1,1 +1,1 @@
-Website link: https://aryanblouria.github.io/my-site/
+Deployment: https://aryanblouria.github.io/my-site/
