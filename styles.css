@@ -1,0 +1,184 @@
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  background-color: lightgreen;
+  font-family: Poppins, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 5%;
+  height: 2.5rem;
+  background-image: linear-gradient(#001A00, black);;
+  box-shadow: 0 0 5px grey;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.logo:hover {
+  color: seagreen;
+  transition: 1s;
+  transform: scale(1.05);
+}
+
+.logo:not(:hover) {
+  color: white;
+  transition: 1.5s;
+}
+
+.logo:hover .fa-user-secret {
+  color: seagreen;
+  transition: 1s;
+  transform: rotate(360deg);
+}
+
+.logo:not(:hover) .fa-user-secret {
+  color: white;
+  transition: 1s;
+  transform: rotate(0deg);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar li {
+  margin-left: 2.5rem;
+}
+
+.navbar a {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.active, .navbar a:hover {
+  color: seagreen;
+  border-bottom: .1rem solid seagreen;
+  padding: 0.1rem 0;
+  transition: .2s;
+}
+
+.footer {
+  min-height: auto;
+  padding-top: 0;
+  margin-top: 1.5rem;
+  background: black;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.box {
+  flex: 1 1 25rem;
+  margin: 0 2rem 1rem;
+}
+
+.box h3 {
+  font-size: 2rem;
+  color: white;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.box p {
+  font-size: 1rem;
+  color: white;
+  padding: 0.5rem 0;
+  text-transform: none;
+  text-align: justify;
+}
+
+.box p i {
+  padding-right: 1rem;
+  color: seagreen;
+}
+
+.box a {
+  font-size: 1rem;
+  color: white;
+  padding: .3rem 0;
+  text-decoration: none;
+  display: block;
+}
+
+.box a:hover {
+  color: seagreen;
+  margin-left: 1rem;
+  transition: .2s;
+}
+
+.box a:not(:hover) {
+  color: white;
+  transition: .2s;
+}
+
+.box .share {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.box .share a {
+  height: 1.5rem;
+  width: 2rem;
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 5rem;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: .2s;
+  background: white;
+  color: black;
+  border: none;
+}
+
+.box .share a:hover {
+  background-color: black;
+  border-left: .1rem solid seagreen;
+  border-right: .1rem solid seagreen;
+  color: seagreen;
+}
+
+.box.midbox {
+  padding-left: 5rem;
+}
+
+.box p:hover .fa-envelope, .box p:hover .fa-map-marked-alt {
+  transition: 0.5s;
+  margin-right: 0.5rem;
+  transform: scale(1.25);
+}
+
+.box p:not(:hover) .fa-envelope, .box p:not(:hover) .fa-map-marked-alt {
+  transition: 0.5s;
+  margin-right: 0;
+  transform: scale(1);
+}
+
+#particles-js {
+  margin-top: 4rem;
+  height: 41.5rem;
+}

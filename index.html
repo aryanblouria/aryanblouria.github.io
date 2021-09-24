@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Aryan's Portfolio</title>
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles.css">
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
@@ -15,13 +15,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
   <!-- Script -->
-  <script src="index.js" charset="utf-8" async></script>
+  <script src="particles.js" charset="utf-8" async></script>
+  <script src="app.js" charset="utf-8" async></script>
 </head>
 
 <body>
   <header>
-    <a href="index.html" class="logo">Aryan Blouria</a>
+    <a href="index.html" class="logo"><i class="fas fa-user-secret"></i>&nbsp; Aryan Blouria</a>
 
     <nav class="navbar">
       <ul>
@@ -35,6 +39,42 @@
       </ul>
     </nav>
   </header>
+
+  <div id="particles-js">
+     <br>
+  </div>
+
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Aryan's Portfolio</h3>
+        <p>Hey there, thanks for stalking me. Bet you liked the website. Feel free to connect with me.<br /> <br /> The projects section looks embarrasingly lonely. That'll soon change though so keep visiting.</p>
+        <p>Bye for now!</p>
+      </div>
+      <div class="box midbox">
+        <h3>Quick Access</h3>
+        <a href="#home"><i class="fas fa-arrow-circle-right"></i> &nbsp;Home</a>
+        <a href="#about"><i class="fas fa-arrow-circle-right"></i> &nbsp;About</a>
+        <a href="#skills"><i class="fas fa-arrow-circle-right"></i> &nbsp;Skills</a>
+        <a href="#education"><i class="fas fa-arrow-circle-right"></i> &nbsp;Education</a>
+        <a href="#projects"><i class="fas fa-arrow-circle-right"></i> &nbsp;Projects</a>
+        <a href="#experience"><i class="fas fa-arrow-circle-right"></i> &nbsp;Experience</a>
+      </div>
+      <div class="box">
+        <h3>Contact Information</h3>
+        <p> <i class="fas fa-envelope"></i>aryanblouria@gmail.com</p>
+        <p> <i class="fas fa-map-marked-alt"></i>New Delhi, India</p>
+        <div class="share">
+          <a href="https://www.linkedin.com/in/aryanblouria/" class="fab fa-linkedin" target="_blank"></a>
+          <a href="https://github.com/aryanblouria" class="fab fa-github" target="_blank"></a>
+          <a href="https://www.instagram.com/codethief/" class="fab fa-instagram" target="_blank"></a>
+          <a href="mailto:aryanblouria@gmail.com" class="fas fa-envelope" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 </body>
 
 </html>
