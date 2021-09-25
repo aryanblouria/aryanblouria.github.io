@@ -6,6 +6,16 @@ body {
   font-family: Poppins, sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: seagreen;
+  border-radius: 0.5rem;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -18,7 +28,7 @@ header {
   padding: 1.5rem 5%;
   height: 2.5rem;
   background-image: linear-gradient(#001A00, black);;
-  box-shadow: 0 0 5px grey;
+  box-shadow: 0 0 5px #001A00;
 }
 
 .logo {
@@ -168,7 +178,7 @@ header {
 
 .box p:hover .fa-envelope, .box p:hover .fa-map-marked-alt {
   transition: 0.5s;
-  margin-right: 0.5rem;
+  margin-right: 0.1rem;
   transform: scale(1.25);
 }
 
