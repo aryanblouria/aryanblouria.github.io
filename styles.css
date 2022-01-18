@@ -1,5 +1,8 @@
-body {
+html {
   scroll-behavior: smooth;
+}
+
+body {
   margin: 0;
   padding: 0;
   background-color: lightgreen;
@@ -134,15 +137,15 @@ header {
   display: block;
 }
 
-.box a:hover {
+.midbox a:hover {
   color: seagreen;
-  margin-left: 1rem;
-  transition: .2s;
+  padding-left: 0.5rem;
+  transition: .1s;
 }
 
-.box a:not(:hover) {
+.midbox a:not(:hover) {
   color: white;
-  transition: .2s;
+  transition: .1s;
 }
 
 .box .share {
@@ -186,6 +189,219 @@ header {
   transition: 0.5s;
   margin-right: 0;
   transform: scale(1);
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1.65rem;
+  margin-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.heading i {
+  color: seagreen;
+}
+
+.contact {
+  background: lightgreen;
+  min-height: 45rem;
+}
+
+.contact .container {
+  max-width: 60rem;
+  width: 100%;
+  background: black;
+  border-radius: 1.5rem;
+  margin-left: 16rem;
+  padding: 1.5rem;
+  box-shadow: 0 5px 10px #001A00;
+}
+
+.contact .container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.contact .content .image-box{
+  max-width: 60%;
+  margin-left: 4rem;
+}
+
+.contact .content .image-box i {
+  color: seagreen;
+  font-size: 20rem;
+  height: 22.5rem;
+  margin-left: 1rem;
+}
+
+.contact .content .image-box i:hover {
+  color: #257147;
+  perspective: 1000px;
+  transition: .2s;
+}
+
+.contact .content .image-box i:not(:hover) {
+  color: seagreen;
+  perspective: 1000px;
+  transition: .2s;
+}
+
+.contact .content form{
+  width: 47.5%;
+  margin-right: 4rem;
+}
+
+form .form-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+
+}
+
+.form-group .field{
+  height: 50px;
+  display: flex;
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+}
+
+form i{
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  color: white;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+form .field input,
+form .message textarea{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 16px 0 48px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background: black;
+  color: white;
+  font-family: Poppins;
+}
+
+.field input::placeholder,
+.message textarea::placeholder{
+  color: white;
+}
+
+.field input:focus::placeholder,
+.message textarea:focus::placeholder{
+  color: seagreen;
+}
+.field input:focus,
+.message textarea:focus{
+  padding-left: 47px;
+  border: 1px solid seagreen;
+  color: seagreen;
+}
+.field input:focus ~ i,
+.message textarea:focus ~ i{
+  color: seagreen;
+}
+form .message {
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+}
+form .message i{
+  top: 25px;
+  font-size: 20px;
+  left: 15px;
+}
+form .message textarea{
+  min-height: 130px;
+  max-height: 230px;
+  max-width: 85%;
+  min-width: 85%;
+  padding: 12px 20px 0 48px;
+}
+
+form .button-area{
+  display: flex;
+  float: right;
+  flex-direction: row-reverse;
+}
+
+.button-area button{
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 1.25rem;
+  font-family: Poppins;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: .5rem;
+  padding: 0.75rem 1.5rem;
+  background: seagreen;
+  box-shadow: 0px 2.5px 5px darkgreen;
+  transition: 0.2s ease;
+}
+
+.button-area button:hover {
+  background: #257147;
+  transform: scale(1.025);
+}
+
+.button-area span {
+  font-size: 1rem;
+  padding: 1rem;
+  display: none;
+}
+
+.button-area button i {
+  position: relative;
+  top: .6rem; left: .2rem;
+  font-size: 1.25rem;
+  transition: 0.2s;
+  color: black;
+}
+
+.button-area button:hover i {
+  left: 0.35rem;
+}
+
+input:focus ~ .floating-label,
+textarea:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label,
+textarea:not(:focus):valid ~ .floating-label{
+  top: -18px;
+  left: 5px;
+  font-size: 12px;
+  opacity: 1;
+  color: seagreen;
+  font-weight: bold;
+}
+
+.inputText {
+  font-size: 14px;
+  width: 200px;
+  height: 35px;
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 48px;
+  top: 13.5px;
+  transition: 0.2s ease all;
+  color: white;
 }
 
 #particles-js {
